@@ -1,0 +1,18 @@
+﻿<% @ideas.each do |idea| %>
+  <%=h idea.content %><br />
+  <em><%=h idea.created_at %>&nbsp;
+  <%= link_to 'забыть', idea, :method => :delete %></em>
+  <h1>
+  <%= idea.rating %>&nbsp;
+  <%= link_to '+1', :action => "add_vote", :id => idea %>&nbsp;
+  <%= link_to '-1', :action => "remove_vote", :id => idea %>
+  </h1>
+  <hr />
+<% end %>
+
+<p>
+<% form_for :idea, @article, :url => { :action => "create" } do |f| %>
+  <%= f.text_area :content, :size => "60x4" %><br/>
+  <%= submit_tag "записать мысль" %>
+<% end %>
+</p>

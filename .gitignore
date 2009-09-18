@@ -1,0 +1,14 @@
+config/database.yml
+db/*.db
+db/*.sqlite*
+log/*.log
+pkg
+tmp/*
+.DS_Store
+.svn
+TAGS
+public/tmp
+spec/datasets/tmp
+*.tmproj
+cache
+.idea
