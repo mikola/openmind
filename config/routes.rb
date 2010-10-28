@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :ideas
 
-  map.add_vote 'ideas/:id/add_vote', :controller => 'idea', :action => 'add_vote'
-  map.remove_vote 'ideas/:id/remove_vote', :controller => 'idea', :action => 'remove_vote'
+  map.add_vote 'ideas/:id/add_vote', :controller => 'ideas', :action => 'add_vote'
+  map.remove_vote 'ideas/:id/remove_vote', :controller => 'ideas', :action => 'remove_vote'
 
   # The priority is based upon order of creation: first created -> highest priority.
 

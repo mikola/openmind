@@ -1,6 +1,6 @@
 body {
  font-family: Georgia, "Times New Roman", serif;
- font-size: 13px;
+ font-size: 16px;
 }
 #wrapper { 
  margin: 0 auto;
@@ -61,4 +61,24 @@ P.idea {
 P.action {
   font-size: 10pt;
   margin: 0px 0px 10px 20px;
+}
+.content {
+  width: 600px;
+  background-color: gray;
+  display: center;
+}
+.idea {
+  margin: 12px;
+  padding: 6px;
+  color: black; 
+  background-color: lightyellow;
+}
+.rating {
+  display: inline;
+}
+.idea_content {
+  display: left;
+}
+.links {
+  display: right;
 }
